@@ -1,0 +1,37 @@
+.intro{
+    background-image: url(img/intro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+
+    h1{
+        font-size: 10rem;
+        @media only screen and (min-width: 1280px) {
+            font-size: 6rem;
+        }
+    }
+
+    h3{
+        font-size: 3rem;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        letter-spacing: 1.9px;
+        color: $white;
+
+        &::before{
+            content: '';
+            display: block;
+            margin: 0 auto 0.75em auto;
+            height: 1px;
+            width: 70%;
+            background: $white;
+        }
+    }
+
+}

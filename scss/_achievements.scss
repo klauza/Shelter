@@ -1,0 +1,59 @@
+@supports (display: grid){
+
+    .achievements{
+        text-align: center;
+        font-family: $ff-Tekton;
+        background-color: $light-green;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        justify-items: center;
+       
+
+        &-description{
+            width: 100%;
+            font-size: 2em;
+            margin: 2em 0;
+            padding: 0 20px;
+            
+
+            &::after{
+                content: '';
+                display: block;
+                height: 1px;
+                width: 30%;
+                background-color: $grey;
+                margin: 35px auto 0px auto;
+            }
+        }
+
+        &-pets{
+            display: grid;
+            margin-bottom: 2em;
+            padding: 0 20px;
+            &__cat,
+            &__dog,
+            &__happy{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                font-size: 2.3rem;
+                margin-bottom: 25px;
+                span{
+                    line-height: 50px;
+                    margin: 0 20px;
+                }
+                img{
+                    width: 100px;
+                }
+                p{
+                    margin-bottom: 10px;
+                }
+            }
+
+
+        }
+
+    }
+}

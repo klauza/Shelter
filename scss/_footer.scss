@@ -1,0 +1,30 @@
+footer{
+    background: $white;
+    padding: 5em 0;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    .social-icons{
+        width: 50%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3em auto;
+
+        img{
+            display: block;
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+
+    @media (min-width: 1050px){
+        .social-icons img{
+            width: 25%;
+            height: 25%;
+        }
+    }
+}

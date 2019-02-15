@@ -1,0 +1,90 @@
+.our-pets{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    h1{
+        margin: 150px 0 50px 0;
+        text-align: center;
+        color: $green-green;
+    }
+
+    &--cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        grid-template-rows: 1fr 1fr;
+        font-size: 1.4em;
+
+        overflow: hidden;
+        @media only screen and (min-width: 1050px) {
+            grid-template-columns: repeat(2, minmax(auto, 500px));
+          
+        }
+
+        .pet-card{
+            margin: 10px 5px;
+            display: flex;
+            text-align: left;
+            //border: 1px solid black;
+            box-shadow: 0px 9px 24px -7px rgba(0,0,0,0.75);
+            background: $light-green;
+            outline: 1px solid $grey;
+            outline-offset: -10px;
+
+            .images,
+            figcaption{
+               flex: 1;
+            }
+
+            figcaption{
+                margin: 15px;
+            }
+
+            .images img{
+                
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &__name{
+                margin: 20px 0;
+                font-family: $ff-Tekton;
+
+                &::after{
+                    content: '';
+                    display :block;
+                    height: 1px;
+                    width:60px;
+                    background: $grey;
+                    margin-left: -10px;
+                }
+            }
+
+            &__desc{
+                margin-top: 5px;
+                font-family: $ff-Tekton;
+
+            }
+            
+        }
+
+        
+    }
+    &__link{ //button
+        margin: 50px auto 200px auto;
+        display: block;
+        background: $green-green;
+        border: 1px solid black;
+        border-radius: 4px;
+        a{
+            color:$white;
+            padding: 30px;
+            display: block;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}

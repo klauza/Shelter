@@ -1,0 +1,59 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}  
+
+body{
+    //line-height
+    //color
+    //font-family: $ff-s;
+    background-color: $white;
+
+    @media (min-width: 50em){
+        font-size: 1em;
+    }
+}
+
+
+h1
+{
+    color: $yellowish;
+    line-height: 1;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: $ff-Stencil;
+}
+
+
+h3{
+    color: $dark-green;
+    font-family: $ff-Stencil;
+}
+p{
+    color: $green-green;
+    font-family: $ff-Tahoma;
+}
+
+@mixin underline($width: 100%, $color:#000, $margin:50px auto){
+    content: '';
+    display: block;
+    height: 1px;
+
+    width: $width;
+    background-color: $color;
+    margin: $margin;
+}
+
+
+
+@mixin clearfix {
+    &::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    
+}
+//Usage:
+// @include clearfix;

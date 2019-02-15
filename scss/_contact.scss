@@ -1,0 +1,53 @@
+.contact{
+    padding: 5em 0;
+    width: 90%;
+    margin: 0 auto;
+    h1{
+        text-align:center;
+    }
+
+    label{
+        display: block;
+        margin-top: 1em;
+        font-size: 2rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input,
+    textarea{
+        display: block;
+        width: 100%;
+        padding: 0.5em;
+        background: lighten($grey, 70%);
+        border: 1px solid $grey;
+        font-size: 2.2rem;
+    }
+    
+    .submit{
+        display: inline-block;
+        width: 30%;
+        margin-top: 1em;
+        margin-left: auto;
+        background: $yellowish;
+        color: $black;
+    }
+
+    
+    @media (min-width:1050px){
+        
+        label{
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 2em;
+            font-size: 1rem;
+        }
+        .submit{
+            margin: 20px auto;
+            width: 15%;
+            padding: 2px;
+        }
+
+    }
+}
