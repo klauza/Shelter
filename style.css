@@ -56,6 +56,38 @@ p {
   text-align: center;
 }
 
+.intro__description {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: auto;
+  height: 100px;
+  display: block;
+  text-align: left;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d4d4d400), color-stop(20%, #d4d4d450), color-stop(80%, #d4d4d450), to(#d4d4d400));
+  background: linear-gradient(to bottom, #d4d4d400 0%, #d4d4d450 20%, #d4d4d450 80%, #d4d4d400 100%);
+  padding: 0 20px;
+}
+
+.intro__description > * {
+  margin-top: 15px;
+  color: white;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans;
+}
+
+@media (max-width: 508px) {
+  .intro__description > * {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 508px) {
+  .intro__description {
+    text-align: center;
+  }
+}
+
 .intro h1 {
   font-size: 10rem;
 }
