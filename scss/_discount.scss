@@ -1,4 +1,5 @@
 .discount{
+    
     @supports (display: grid){
         display: grid;
         grid-template-columns: 2em 1fr 2em;
