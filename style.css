@@ -37,9 +37,9 @@ p {
 .intro {
   background-image: url(img/intro.jpg);
   background-size: cover;
-  background-position: center;
   height: 100vh;
-  background-position: center;
+  width: 100%;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ p {
 }
 
 .intro h1 {
-  font-size: 10rem;
+  font-size: 10vw;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -99,11 +99,17 @@ p {
 }
 
 .intro h3 {
-  font-size: 3rem;
+  font-size: 5vw;
   margin-top: 50px;
   margin-bottom: 200px;
   letter-spacing: 1.9px;
   color: rgba(255, 255, 255, 0.85);
+}
+
+@media only screen and (min-width: 1280px) {
+  .intro h3 {
+    font-size: 3rem;
+  }
 }
 
 .intro h3::before {
@@ -242,8 +248,13 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 2.3rem;
+    font-size: 14px;
     margin-bottom: 25px;
+  }
+  @media only screen and (min-width: 768px) {
+    .achievements-pets__cat, .achievements-pets__dog, .achievements-pets__happy {
+      font-size: 28px;
+    }
   }
   .achievements-pets__cat span, .achievements-pets__dog span, .achievements-pets__happy span {
     line-height: 50px;
@@ -530,7 +541,7 @@ footer a:hover {
   display: block;
   text-align: center;
   margin: 15px auto;
-  font-size: 2.5em;
+  font-size: 1.4em;
 }
 
 @media (min-width: 1050px) {
