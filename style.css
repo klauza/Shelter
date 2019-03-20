@@ -404,8 +404,6 @@ footer {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
-  background: linear-gradient(to bottom, #000, #fff);
 }
 
 footer .social-icons {
