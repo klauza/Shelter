@@ -1,15 +1,15 @@
 .contact{
-    padding: 5em 0;
+    padding: 3.5em 0;
     width: 90%;
     margin: 0 auto;
     h1{
-        text-align:center;
+        text-align: center;
     }
 
     label{
         display: block;
         margin-top: 1em;
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
     form{
         display: flex;
@@ -22,12 +22,12 @@
         padding: 0.5em;
         background: lighten($grey, 70%);
         border: 1px solid $grey;
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
     
     .submit{
         display: inline-block;
-        width: 30%;
+        width: 50%;
         margin-top: 1em;
         margin-left: auto;
         background: $yellowish;
