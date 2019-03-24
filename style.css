@@ -84,15 +84,20 @@ p {
 
 @media (max-width: 508px) {
   .intro__description {
+    width: 100%;
     text-align: center;
+    top: 50px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 
 .intro h1 {
-  font-size: 10vw;
+  font-size: 4em;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 580px) {
   .intro h1 {
     font-size: 6rem;
   }
@@ -106,7 +111,7 @@ p {
   color: rgba(255, 255, 255, 0.85);
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1080px) {
   .intro h3 {
     font-size: 3rem;
   }
@@ -235,7 +240,7 @@ p {
     display: -ms-grid;
     display: grid;
     margin-bottom: 2em;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .achievements-pets__cat, .achievements-pets__dog, .achievements-pets__happy {
     display: -webkit-box;
@@ -251,11 +256,6 @@ p {
     font-size: 14px;
     margin-bottom: 25px;
   }
-  @media only screen and (min-width: 768px) {
-    .achievements-pets__cat, .achievements-pets__dog, .achievements-pets__happy {
-      font-size: 28px;
-    }
-  }
   .achievements-pets__cat span, .achievements-pets__dog span, .achievements-pets__happy span {
     line-height: 50px;
     margin: 0 20px;
@@ -264,7 +264,19 @@ p {
     width: 100px;
   }
   .achievements-pets__cat p, .achievements-pets__dog p, .achievements-pets__happy p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  @media only screen and (min-width: 768px) {
+    .achievements-pets__cat, .achievements-pets__dog, .achievements-pets__happy {
+      font-size: 28px;
+    }
+    .achievements-pets__cat p, .achievements-pets__dog p, .achievements-pets__happy p {
+      margin-bottom: 15px;
+      line-height: 50px;
+      font-weight: normal;
+    }
   }
 }
 
@@ -383,7 +395,7 @@ p {
 }
 
 .contact {
-  padding: 5em 0;
+  padding: 3.5em 0;
   width: 90%;
   margin: 0 auto;
 }
@@ -395,7 +407,7 @@ p {
 .contact label {
   display: block;
   margin-top: 1em;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .contact form {
@@ -415,12 +427,12 @@ p {
   padding: 0.5em;
   background: rgba(179, 179, 179, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.25);
-  font-size: 2.2rem;
+  font-size: 1.6rem;
 }
 
 .contact .submit {
   display: inline-block;
-  width: 30%;
+  width: 50%;
   margin-top: 1em;
   margin-left: auto;
   background: #D5E68D;
@@ -442,15 +454,18 @@ p {
 }
 
 footer {
-  background: rgba(255, 255, 255, 0.85);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a0a0a0), color-stop(50%, white), to(rgba(255, 255, 255, 0.85)));
+  background: linear-gradient(to top, #a0a0a0 0%, white 50%, rgba(255, 255, 255, 0.85) 100%);
+}
+
+footer .footer-container {
   padding: 5em 0;
   text-align: center;
   width: 80%;
   margin: 0 auto;
 }
 
-footer .social-icons {
-  width: 50%;
+footer .footer-container .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,24 +478,21 @@ footer .social-icons {
   margin: 3em auto;
 }
 
-footer .social-icons img {
-  display: block;
-  width: 40%;
-  height: 40%;
+footer .footer-container .social-icons img {
+  width: 50px;
 }
 
 @media (min-width: 1050px) {
-  footer .social-icons img {
-    width: 25%;
-    height: 25%;
+  footer .footer-container .social-icons img {
+    width: 60px;
   }
 }
 
-footer a:nth-of-type(1) {
+footer .footer-container a:nth-of-type(1) {
   margin-top: 25px;
 }
 
-footer a {
+footer .footer-container a {
   display: block;
   margin-top: 5px;
   text-decoration: none;
@@ -490,8 +502,8 @@ footer a {
   word-spacing: 10px;
 }
 
-footer a:hover {
-  color: #bbb013;
+footer .footer-container a:hover {
+  color: #517008;
 }
 
 .responsibility {
@@ -509,6 +521,11 @@ footer a:hover {
   padding-top: 3em;
 }
 
+.responsibility h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .responsibility-top, .responsibility-middle, .responsibility-bottom {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -516,13 +533,9 @@ footer a:hover {
 }
 
 .responsibility-top {
-  padding: 3em 4em;
+  padding: 25px 20px;
   font-family: "Tahoma", sans;
   text-align: justify;
-}
-
-.responsibility-middle {
-  margin: 0 4em;
 }
 
 .responsibility-middle img {
@@ -533,7 +546,7 @@ footer a:hover {
 }
 
 .responsibility-bottom {
-  padding: 6em 4em;
+  padding: 2em 2em;
   font-family: "Tekton Pro", sans;
 }
 
@@ -552,10 +565,10 @@ footer a:hover {
     margin: 0 auto;
     display: block;
     width: 60%;
+    margin: 0 auto;
   }
   .responsibility .responsibility-top {
-    padding: 6em 0em;
-    margin: 0 auto;
+    margin: 2em auto;
     width: 60%;
     line-height: 40px;
   }

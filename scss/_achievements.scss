@@ -31,7 +31,7 @@
         &-pets{
             display: grid;
             margin-bottom: 2em;
-            padding: 0 20px;
+            padding: 0 10px;
             &__cat,
             &__dog,
             &__happy{
@@ -41,9 +41,7 @@
                 font-size: 14px;
                 margin-bottom: 25px;
                 
-                @media only screen and (min-width: 768px) {
-                    font-size: 28px;
-                }
+                
 
                 span{
                     line-height: 50px;
@@ -53,7 +51,20 @@
                     width: 100px;
                 }
                 p{
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
+                    line-height: 50px;
+                    font-weight: bold;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    font-size: 28px;
+
+                    p{
+                        margin-bottom: 15px;
+                        line-height: 50px;
+                        font-weight: normal;
+                    }
+
                 }
             }
 
