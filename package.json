@@ -1,0 +1,25 @@
+{
+  "name": "shelderapp",
+  "version": "1.6.0",
+  "description": "The Shelter app",
+  "main": "javaScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klauza/Shelter.git"
+  },
+  "keywords": [
+    "any"
+  ],
+  "author": "Michal Klauza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klauza/Shelter/issues"
+  },
+  "homepage": "https://github.com/klauza/Shelter#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
