@@ -1,4 +1,6 @@
 ## This is a repositorium related to the main portfolio page.
+
+- v2.0.0 complete project refactor, webpack has been added
 - v1.7 css / content changes
 - v1.6 package.json created
 - v1.4/5 fixed mobile responsiveness issues
