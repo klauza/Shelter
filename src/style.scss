@@ -1,8 +1,13 @@
+// loader
+@import './scss/loader';
+
+// general
 @import './scss/colors';
 @import './scss/typography';
 @import './scss/base';
 
-//layout
+// layout
+
 @import './scss/intro';
 @import './scss/discount';
 @import './scss/achievements';

@@ -1,4 +1,12 @@
 import "./style.scss";
 import { app } from "./js/app.js"; 
 
-app();
+
+window.addEventListener('load', function(){
+  this.setTimeout(()=>{
+    const loader = document.querySelector('.loader');
+    app();
+    loader.classList.add('hidden');
+  }, 500)
+ 
+});
