@@ -1,10 +1,9 @@
 {
-  "name": "shelderapp",
+  "name": "shelter-app",
   "version": "1.6.0",
   "description": "The Shelter app",
   "main": "javaScript.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
@@ -16,7 +15,7 @@
     "any"
   ],
   "author": "Michal Klauza",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/klauza/Shelter/issues"
   },
